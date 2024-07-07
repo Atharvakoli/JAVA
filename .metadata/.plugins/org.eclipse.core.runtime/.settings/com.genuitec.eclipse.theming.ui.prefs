@@ -1,13 +1,15 @@
 applyBackground=false
 approved.defs.file.last.changed.time=1693315978000
+codetogether.announce.displayed=true
 configurationInstallLocation=/C\:/Users/HP/Downloads/eclipse-java-2024-06-R-win32-x86_64/eclipse/
+ct.reengagement.display.after=1730518966422
 ct.upsell.display.after=1718852948118
 eclipse.preferences.version=1
 iconcolormode=primary
 iconreplacement=false
 includeThemingInOomph=false
-last.download.attempt.time=1718249076196
-lastConfiguration=1718249060703
+last.download.attempt.time=1719806102032
+lastConfiguration=1719806081780
 newinstall=false
 showWelcomeDialog=false
 workbench.theme=Dark Green

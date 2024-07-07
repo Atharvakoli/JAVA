@@ -1,0 +1,7 @@
+Version Control Systems - overview
+The Most popular
+Git - overview -> It stores file links to the snapshots of changed files in case file wasn't changed. Git deosn't stores file instead, it stores just a link to the previous identical files that was already stored. so each time you commit changes, it takes a picture of what all files look like at the moment and stores a reference to that snapshot.
+
+Git - Main features -> before snapshot of your file system is created, everything is check samed and hashes created afterwards you can use this checksum to refere to this exact state of the files. That means it is impossible to change the content of any file or directory without knowing about it. so each your commit has 40 characters string composed of hexadecimal characters and calculated based on the contents of a file or directories structure, Hash looks like this 46f0f54deca2896f61d4ab and you can use this hash string to navigate between diferent versions of your code. Version control systems might be centralized and distributed in centralized all enginners are connected to the main server and all people collaborate through that server, the diggest drawback here is the fact that when central server is down, you can't collaborate in distributed version control systems. Each engineer has a copy of the whole project and can easily restore it if needed or in case there is no netwrok git is a distributed version control system to perform most of operations and in get you don't need information from another computer
+
+How git operates
