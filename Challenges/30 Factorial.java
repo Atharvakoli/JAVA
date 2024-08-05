@@ -7,7 +7,9 @@ class Factorial {
         System.out.print("Please enter your number: ");
         int num = input.nextInt();
         long fact = factorial(num);
-        System.out.println("Factorial is: " + fact);
+        long factRecursive = factRecursive(num);
+
+        System.out.println("Factorial is: " + fact + " Fcatorial of recursive approach " + factRecursive);
     }
 
     public static long factorial(int num) {
@@ -21,5 +23,12 @@ class Factorial {
             i++;
         }
         return fact;
+    }
+
+    public static long factRecursive(int num) {
+        if (num < 2) {
+            return 1;
+        }
+        return num * factRecursive(num - 1);
     }
 }

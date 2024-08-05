@@ -2,8 +2,13 @@
 public class FirstProgram {
     public static void main(String[] args) {
 
+        // SOURCE CODE --> JAVA COMPILER --> BYTE CODE --> JAVA VIRTUAL MACHINE (JVM)
+        // --> OPERATING SYSTEM
+
+        // JVM Architecture
+
         int x;
-        for(x = 0; x < 10; x++) {
+        for (x = 0; x < 10; x++) {
             System.out.println("X is :" + x);
         }
 
@@ -23,29 +28,26 @@ public class FirstProgram {
         // y = 24;
 
         // if(x < y) {
-        //     System.out.println("X is less than Y");
+        // System.out.println("X is less than Y");
         // } else if (x > y) {
-        //     System.out.println("X is greater then Y");
+        // System.out.println("X is greater then Y");
         // }
 
         // x = x * 2;// 24;
 
-
         // if(x == y) {
-        //     System.out.println("X is now equal to the y" + x+ y);
+        // System.out.println("X is now equal to the y" + x+ y);
         // }
 
         // x = x * 2;
 
         // if (x > y) {
-        //     System.out.println("X is now greater than y");
+        // System.out.println("X is now greater than y");
         // }
 
         // if(x == y) {
-        //     System.out.println("You won't see this");
+        // System.out.println("You won't see this");
         // }
-
-
 
     }
 }

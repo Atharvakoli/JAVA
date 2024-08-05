@@ -24,7 +24,7 @@ class LoopPatterns {
 
             // this loop prints stars
             int i = 0;
-            while (i <= (maxRows-rows)) {
+            while (i <= (maxRows - rows)) {
                 System.out.print("* ");
                 i++;
             }
@@ -32,6 +32,11 @@ class LoopPatterns {
             rows--;
         }
     }
+    // By creating a copy of maxRows and assigning it to rows, the original value of
+    // maxRows remains unchanged. If maxRows were used directly in the loop, it
+    // would be decremented in each iteration, changing its value. This could be
+    // problematic if maxRows needs to be used later in the program or if the method
+    // is called multiple times, as the value of maxRows would not be preserved.
 
     public static void printReverseRightHalfPyramid(int maxRows) {
         System.out.println("\nHere is Reverse Right Half Pyramid");

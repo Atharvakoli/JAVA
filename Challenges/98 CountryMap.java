@@ -20,6 +20,7 @@ class CountryMap {
         } else {
             System.out.println("Sorry We don't know the capital");
         }
+        input.close();
 
     }
 }

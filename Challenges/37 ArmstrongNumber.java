@@ -20,8 +20,10 @@ class ArmstrongNumber {
         int finalNumber = 0;
         while (num > 0) {
             int lastDigit = num % 10;
-            num /= 10;
+            System.out.println("lastDigit: " + lastDigit);
             finalNumber += pow(lastDigit, noOfDigits);
+            num /= 10;
+            System.out.println("FinalNumber: " + finalNumber);
         }
         return finalNumber == numCopy;
     }
@@ -45,8 +47,3 @@ class ArmstrongNumber {
         return digits;
     }
 }
-
-
-
-
-

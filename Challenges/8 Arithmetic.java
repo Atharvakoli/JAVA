@@ -14,11 +14,14 @@ class Arithmetic {
         int mul = first * second;
         int div = first / second;
         int mod = first % second;
+        int arc = first ^ second;
 
         System.out.println("Addition is: " + add);
         System.out.println("Subtraction is: " + sub);
         System.out.println("Multiplication is: " + mul);
         System.out.println("Division is: " + div);
         System.out.println("Modulus is: " + mod);
+        System.out.println("Modulus is: " + arc);
+
     }
 }

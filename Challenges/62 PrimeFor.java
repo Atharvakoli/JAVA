@@ -18,4 +18,9 @@ class PrimeFor {
         }
         return true;
     }
+
+    // another method to check prime or not
+    public static boolean isPrimeOrNot(int num) {
+        return true;
+    }
 }

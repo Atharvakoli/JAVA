@@ -1,16 +1,18 @@
 
 public class Arrays {
     public static void main(String[] args) {
-
-        // Array - is an object which contains elements of similar daat types and
-        // suppport access to them by index
-        // Index of the element in array is 0
-        // No dynamic size
-        // 40 55 63 17 22 68 89 97 89
-        // 0 1 2 3 4 5 6 7 8
-        // Array Length = 9
-        // First Index = 0
-        // last Index = 8
+        /*
+         * Array - is an object which contains elements of similar data types and
+         * suppport access to them by index
+         * Index of the element in array is 0
+         * No dynamic size
+         * 40 55 63 17 22 68 89 97 89
+         * 0 1 2 3 4 5 6 7 8
+         * Array Length = 9
+         * First Index = 0
+         * last Index = 8
+         * 
+         */
 
         int[] arr;
         int arr2[];
@@ -104,10 +106,15 @@ public class Arrays {
         // System.out.println();
         // }
 
-        // double m[][] = {
-        // { 0*0, 1*0, 2*0,3*0},
-        // { 0*0, 1*0, 2*0,3*0}
-        // }
-
+        double m[][] = {
+                { 0 * 0, 1 * 0, 2 * 0, 3 * 0 },
+                { 0 * 0, 1 * 0, 2 * 0, 3 * 0 }
+        };
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m[i].length; j++) {
+                System.out.print(m[i][j]);
+            }
+            System.out.println();
+        }
     }
 }

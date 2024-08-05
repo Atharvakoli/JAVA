@@ -8,16 +8,18 @@ class GCD {
         int first = input.nextInt();
         System.out.print("Please enter your number: ");
         int second = input.nextInt();
-        int gcd = gcd(first, second);
+        System.out.print("Please enter your number: ");
+        int third = input.nextInt();
+        int gcd = gcd(first, second, third);
         System.out.println("GCD of the numbers is: " + gcd);
     }
 
-    public static int gcd(int num1, int num2) {
+    public static int gcd(int num1, int num2, int num3) {
         int gcd = 1;
         int i = 2;
-        int least = least(num1, num2);
+        int least = least(num1, num2, num3);
         while (i <= least) {
-            if (num1 % i == 0 && num2 % i == 0) {
+            if (num1 % i == 0 && num2 % i == 0 && num2 % i == 0) {
                 gcd = i;
             }
             i++;
@@ -25,11 +27,13 @@ class GCD {
         return gcd;
     }
 
-    public static int least(int num1, int num2) {
-        if (num1 < num2) {
+    public static int least(int num1, int num2, int num3) {
+        if (num1 < num2 && num1 < num3) {
             return num1;
-        } else {
+        } else if (num2 < num3) {
             return num2;
+        } else {
+            return num3;
         }
     }
 }

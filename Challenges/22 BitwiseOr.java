@@ -12,10 +12,12 @@ class BitwiseOr {
         int result = first | second;
         System.out.println("Result is: " + result);
     }
+    /*
+     * The Bitwise ORThe OR operator, |, combines bits such that if either of the
+     * bits in the operands is a 1, then the resultant bit is a 1, as shown here:
+     * 00101010 42
+     * | 00001111 15
+     * _________
+     * 00101111 47
+     */
 }
-
-
-
-
-
-

@@ -1,7 +1,10 @@
+import java.util.Scanner;
+
 class MaxMinArray {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         System.out.println("Welcome to Max and Min\n");
-        int[] numArr = ArrayUtility.inputArray();
+        int[] numArr = ArraysUtility.inputArray(input);
         int max = max(numArr);
         int min = min(numArr);
         System.out.println("Max of the Array is: " + max);
@@ -19,6 +22,7 @@ class MaxMinArray {
         }
         return min;
     }
+
     public static int max(int[] numArr) {
         if (numArr.length == 0) {
             return Integer.MIN_VALUE;
@@ -27,7 +31,7 @@ class MaxMinArray {
         int i = 1;
         while (i < numArr.length) {
             if (max < numArr[i]) {
-               max = numArr[i];
+                max = numArr[i];
             }
             i++;
         }

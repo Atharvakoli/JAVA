@@ -8,15 +8,19 @@ class LCM {
         int first = input.nextInt();
         System.out.print("Please enter your number: ");
         int second = input.nextInt();
-        int lcm = lcm(first, second);
+        System.out.print("Please enter your number: ");
+        int third = input.nextInt();
+        System.out.print("Please enter your number: ");
+        int four = input.nextInt();
+        int lcm = lcm(first, second, third, four);
         System.out.println("LCM of the two numbers is: " + lcm);
     }
 
-    public static int lcm(int first, int second) {
+    public static int lcm(int first, int second, int third, int four) {
         int i = 1;
         while (true) {
-            int factor = first * i;
-            if (factor % second == 0) {
+            int factor = first * i;// remove factors
+            if (factor % second == 0 && factor % third == 0 && factor % four == 0) {
                 return factor;
             }
             i++;
